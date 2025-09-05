@@ -12,7 +12,7 @@ This project focuses on a **simulated beverage store** and demonstrates how adva
 ---
 
 ## 2. Data Structure Overview  
-The project uses a **simulated retail dataset** reflecting real-world café operations (2022–2024).  
+The project uses the operation data of a coffee shops (2022–2024).  
 
 Key entities include:  
 - **Orders**: `OrderMasters`, `OrderDetails` (transactions, products, reviews).  
@@ -21,7 +21,6 @@ Key entities include:
 - **Customers & Employees**: profiles, accounts, and activity logs.  
 
 📊 Dataset size: ~300,000 rows of transactions  
-🔧 Tools used: **Python, Pandas, NumPy, Mockaroo, Generatedata**  
 
 ---
 ## 3. Tech Stack  
@@ -36,8 +35,7 @@ This project was built using the following tools and technologies:
 - **Recommender Systems**: Surprise library (KNN, SVD), Scikit-learn (TF-IDF, cosine similarity)  
 - **Visualization**: Matplotlib, Seaborn  
 - **GUI Development**: PyQt6, Qt Designer  
-- **Data Simulation**: Mockaroo, Generatedata  
-- **Development Environment**: Jupyter Notebook, Google Colab, PyCharm, VS Code  
+- **Development Environment**: Google Colab, PyCharm, VS Code  
 
 ## 4. Executive Summary – Overview of Findings  
 From analyzing the data and applying ML models, several important findings emerged:  
