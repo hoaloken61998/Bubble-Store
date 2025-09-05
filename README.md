@@ -14,13 +14,7 @@ This project focuses on a **simulated beverage store** and demonstrates how adva
 ## 2. Data Structure Overview  
 The project uses the operation data of a coffee shops (2022–2024).  
 
-Key entities include:  
-- **Orders**: `OrderMasters`, `OrderDetails` (transactions, products, reviews).  
-- **Products**: product details, categories, prices, availability.  
-- **Ingredients & Recipes**: breakdown of product composition.  
-- **Customers & Employees**: profiles, accounts, and activity logs.  
-
-📊 Dataset size: ~300,000 rows of transactions  
+![Alt text](https://github.com/hoaloken61998/Bubble-Store/blob/main/docs/images/ERD.png)
 
 ---
 ## 3. Tech Stack  
