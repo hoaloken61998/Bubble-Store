@@ -14,7 +14,7 @@ This project focuses on a **simulated beverage store** and demonstrates how adva
 ## 2. Data Structure Overview  
 The project uses the operation data of a coffee shops (2022–2024).  
 
-![Alt text](https://github.com/hoaloken61998/Bubble-Store/blob/main/docs/images/ERD.png)
+<img src="https://github.com/hoaloken61998/Bubble-Store/blob/main/docs/images/ERD.png" alt="ERD Diagram" width="70%"/>
 
 ---
 ## 3. Tech Stack  
