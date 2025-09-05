@@ -1,0 +1,40 @@
+ProductID,ProductCategoryID,Product_Name,Product_Size,Product_UnitPrice,Product_Availability,PriceChange
+P1M,PC2,Iced Latte,M,20,1,20
+P1L,PC2,Iced Latte,L,25,1,20
+P2M,PC1,Coffee Americano,M,25,1,20
+P2L,PC1,Coffee Americano,L,31,1,20
+P3M,PC2,Iced Coconut Milk Latte,M,25,1,20
+P3L,PC2,Iced Coconut Milk Latte,L,31,1,20
+P4M,PC1,Coffee Mocha,M,20,1,20
+P4L,PC1,Coffee Mocha,L,25,1,20
+P5M,PC1,Flat White,M,18,0,20
+P5L,PC1,Flat White,L,23,0,20
+P6M,PC3,Frappuccino,M,20,1,20
+P6L,PC3,Frappuccino,L,25,1,20
+P7M,PC2,Matcha Latte,M,25,1,20
+P7L,PC2,Matcha Latte,L,31,1,20
+P8M,PC3,Milk & Cookies Frappuccino,M,23,1,20
+P8L,PC3,Milk & Cookies Frappuccino,L,29,1,20
+P9M,PC3,Cotton Candy Frappuccino,M,20,1,20
+P9L,PC3,Cotton Candy Frappuccino,L,25,1,20
+P10M,PC1,Hot Chocolate,M,18,1,20
+P10L,PC1,Hot Chocolate,L,23,1,20
+P11M,PC2,Caramel Ribbon Crunch,M,25,1,20
+P11L,PC2,Caramel Ribbon Crunch,L,31,1,20
+P12M,PC1,Honey Almond Flat White,M,23,1,20
+P12L,PC1,Honey Almond Flat White,L,29,1,20
+P13M,PC1,Iced Chocolate Almond Shaken Espresso,M,20,1,20
+P13L,PC1,Iced Chocolate Almond Shaken Espresso,L,25,1,20
+P14M,PC1,Vanilla Sweet Cream Cold Foam Iced Coffee,M,18,1,20
+P14L,PC1,Vanilla Sweet Cream Cold Foam Iced Coffee,L,23,1,20
+P15M,PC3,Salted Caramel Mocha,"M
+",25,0,20
+P15L,PC3,Salted Caramel Mocha,L,31,0,20
+P16M,PC3,Green Tea Frappuccino,M,20,1,20
+P16L,PC3,Green Tea Frappuccino,L,25,1,20
+P17M,PC2,Caramel Creme Brulee Latte,M,25,1,20
+P17L,PC2,Caramel Creme Brulee Latte,L,31,1,20
+P18M,PC3,Vanilla Bean Frappuccino,M,25,1,20
+P18L,PC3,Vanilla Bean Frappuccino,L,31,1,20
+P19M,PC3,Caramel Frappuccino,M,22,1,20
+P19L,PC3,Caramel Frappuccino,L,28,1,20

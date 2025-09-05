@@ -1,0 +1,23 @@
+IngredientID,Ingredient_FullName,Ingredient_UnitAmount,Ingredient_Qty,Ingredient_CategoryID
+I1,Ice,cup,10000,IC4
+I2,Milk,cup,10000,IC7
+I3,Espresso,oz,10000,IC6
+I4,Water ,cup,10000,IC4
+I5,Coconutmilk,cup,9000,IC6
+I6,Mocha sauce,Tbsp,10000,IC4
+I7,Chocolate shavings,cup,10000,IC7
+I8,Whipped cream,oz,10000,IC3
+I9,Vanilla bean ice cream,scoop,6000,IC3
+I10,Green tea,tsp,10000,IC6
+I11,Agaue,tpsp,10000,IC4
+I12,Honey,tsp,10000,IC4
+I13,Matcha,tsp,10000,IC6
+I14,Cookies,oz,8900,IC7
+I15,Caramel syrup,tpsp,10000,IC2
+I16,Almond syrup,tbsp,10000,IC2
+I17,chocolate syrup,tbsp,10000,IC2
+I18,Vanilla ,tsp,10000,IC1
+I19,Sugar,tbsp,20000,IC4
+I20,Cocoa,tbsp,10000,IC6
+I21,Salt,tbsp,10000,IC4
+I22,Raspberry Syrup,tbsp,7800,IC2
