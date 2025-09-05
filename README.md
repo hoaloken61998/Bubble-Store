@@ -1,7 +1,7 @@
 # Bubble-Store
 
 ## 1. Background and Overview  
-SIn today’s highly competitive retail environment, small businesses face significant challenges in managing resources, forecasting demand, and retaining customers. The goal of this project is to demonstrate how machine learning (ML) can be leveraged to improve decision-making and business efficiency.
+In today’s highly competitive retail environment, small businesses face significant challenges in managing resources, forecasting demand, and retaining customers. The goal of this project is to demonstrate how machine learning (ML) can be leveraged to improve decision-making and business efficiency.
 
 - Forecast sales and optimize inventory.  
 - Improve customer satisfaction through personalized recommendations.  
