@@ -12,7 +12,34 @@ This project focuses on a **simulated beverage store** and demonstrates how adva
 ---
 
 ## 2. Data Structure Overview  
-The project uses the operation data of a coffee shops (2022–2024).  
+The project uses the operation data of a coffee shops (2022–2024). 
+
+1. **OrderMasters**  
+   - Stores high-level information about each order (date, status, customer, employee, manager).  
+
+2. **OrderDetails**  
+   - Contains itemized details for each order (products purchased, quantity, discounts, ratings).  
+
+3. **Products**  
+   - Catalog of products offered by the store, including name, size, category, price, and availability.  
+
+4. **ProductCategories**  
+   - Defines categories for products
+
+5. **Recipes**  
+   - Maps products to the ingredients used in their preparation.  
+
+6. **Ingredients**  
+   - Details of all ingredients used, including name, measurement units, and quantities.  
+
+7. **IngredientCategories**  
+   - Groups ingredients into categories
+
+8. **Employees**  
+   - Information about staff members (personal details, job titles, hiring info).  
+
+10. **Customers**  
+   - Basic customer information such as ID and profile
 
 <img src="https://github.com/hoaloken61998/Bubble-Store/blob/main/docs/images/ERD.png" alt="ERD Diagram" width="70%"/>
 
