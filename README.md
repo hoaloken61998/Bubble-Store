@@ -24,8 +24,22 @@ Key entities include:
 🔧 Tools used: **Python, Pandas, NumPy, Mockaroo, Generatedata**  
 
 ---
+## 3. Tech Stack  
+This project was built using the following tools and technologies:  
 
-## 3. Executive Summary – Overview of Findings  
+- **Programming Language**: Python 3.11  
+- **Data Manipulation & Analysis**: Pandas, NumPy  
+- **Machine Learning / Forecasting**:  
+  - Statsmodels (ARIMA, SARIMA, Exponential Smoothing)  
+  - Scikit-learn (Random Forest)  
+  - XGBoost  
+- **Recommender Systems**: Surprise library (KNN, SVD), Scikit-learn (TF-IDF, cosine similarity)  
+- **Visualization**: Matplotlib, Seaborn  
+- **GUI Development**: PyQt6, Qt Designer  
+- **Data Simulation**: Mockaroo, Generatedata  
+- **Development Environment**: Jupyter Notebook, Google Colab, PyCharm, VS Code  
+
+## 4. Executive Summary – Overview of Findings  
 From analyzing the data and applying ML models, several important findings emerged:  
 
 - **Sales Seasonality**: Coffee consistently outperformed other beverages, with noticeable spikes during **holiday periods (New Year, July events)**.  
@@ -41,7 +55,7 @@ From analyzing the data and applying ML models, several important findings emerg
 
 ---
 
-## 4. Insights Deep Dive  
+## 5. Insights Deep Dive  
 Some deeper observations from the analysis:  
 - **Product Insights**: Frappuccino and Latte followed coffee in popularity, while certain seasonal drinks saw short-lived surges.  
 - **Holiday Impact**: December promotions nearly doubled average sales compared to regular months.  
@@ -51,7 +65,7 @@ Some deeper observations from the analysis:
 
 ---
 
-## 5. Recommendations  
+## 6. Recommendations  
 Based on these findings, the following actions are recommended:  
 
 1. **Inventory & Supply Chain**  
@@ -72,7 +86,7 @@ Based on these findings, the following actions are recommended:
 
 ---
 
-## 6. Machine Learning Approach & Solution  
+## 7. Machine Learning Approach & Solution  
 The solution integrates multiple ML models into a single application:  
 
 - **Sales Forecasting**  
