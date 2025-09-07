@@ -1,0 +1,1568 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1532</width>
+    <height>880</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>1481</width>
+      <height>821</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>1221</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>1521</width>
+      <height>911</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">        QTabWidget::pane {
+            border: 1px solid lightgray;
+        }
+
+        QTabBar::tab {
+            background: rgb(147, 195, 194);
+            border: 1px solid lightgray;
+            border-bottom-color: none; 
+            padding: 10px;
+            border-top-left-radius: 5px;
+            color: white;
+        }
+
+        QTabBar::tab:selected {
+            background: white;
+            color: black;
+            margin-bottom: -1px; 
+        }
+
+        QTabBar::tab:hover {
+            background: rgb(58, 141, 136);
+            color: white;
+        }
+
+        QTabBar::tab:pressed {
+            background: lightcoral;
+            color: white;
+        }
+</string>
+    </property>
+    <property name="currentIndex">
+     <number>2</number>
+    </property>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Database Management</string>
+     </attribute>
+     <widget class="QTableWidget" name="tableWidgetDatabase">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>110</y>
+        <width>1071</width>
+        <height>591</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QWidget" name="widget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>10</y>
+        <width>1411</width>
+        <height>80</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(57, 139, 134)</string>
+      </property>
+      <widget class="QLabel" name="label_19">
+       <property name="geometry">
+        <rect>
+         <x>490</x>
+         <y>10</y>
+         <width>561</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:rgb(255, 255, 255);
+font: 63 28pt &quot;Bahnschrift SemiBold&quot;;
+</string>
+       </property>
+       <property name="text">
+        <string>DATABASE MANAGEMENT </string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="pushButtonSearch">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>590</y>
+        <width>131</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift</family>
+        <pointsize>7</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(11, 131,120, 219), stop:1 rgba(85,98,112,226));
+	color:rgba(255,255,255,210);
+	border-radius: 5px;
+}
+QPushButton:hover{
+background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(150, 123,111, 219), stop:1 rgba(85,81,84,226));
+}
+QPushButton:press{
+	padding-left:5px;
+	padding-top: 5px;
+	background-color: rgba(150,123,111,255);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Search</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../../../XPS9530/Downloads/projectRoboTraiCay (3)/projectRoboTraiCay (3)/Manager/images/search.png</normaloff>../../../XPS9530/Downloads/projectRoboTraiCay (3)/projectRoboTraiCay (3)/Manager/images/search.png</iconset>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButtonSaveDatabase">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>590</y>
+        <width>121</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift</family>
+        <pointsize>7</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(11, 131,120, 219), stop:1 rgba(85,98,112,226));
+	color:rgba(255,255,255,210);
+	border-radius: 5px;
+}
+QPushButton:hover{
+background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(150, 123,111, 219), stop:1 rgba(85,81,84,226));
+}
+QPushButton:press{
+	padding-left:5px;
+	padding-top: 5px;
+	background-color: rgba(150,123,111,255);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Save</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../../../XPS9530/.designer/backup/images/confirm.png</normaloff>../../../XPS9530/.designer/backup/images/confirm.png</iconset>
+      </property>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>170</y>
+        <width>131</width>
+        <height>341</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_6">
+       <property name="sizeConstraint">
+        <enum>QLayout::SetMaximumSize</enum>
+       </property>
+       <item row="0" column="0">
+        <widget class="QPushButton" name="pushButtonCustomers">
+         <property name="styleSheet">
+          <string notr="true">
+    QPushButton {
+        background-color: rgb(255, 255, 255);
+    }
+    QPushButton:hover {
+        background-color: lightblue;
+    }
+    QPushButton:pressed {
+        background-color: lightskyblue;
+    }</string>
+         </property>
+         <property name="text">
+          <string>Customers</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../../../XPS9530/Downloads/projectRoboTraiCay (3)/projectRoboTraiCay (3)/Manager/product_cate.jpg</normaloff>../../../XPS9530/Downloads/projectRoboTraiCay (3)/projectRoboTraiCay (3)/Manager/product_cate.jpg</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>40</width>
+           <height>40</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QPushButton" name="pushButtonOrderDetails">
+         <property name="styleSheet">
+          <string notr="true">
+    QPushButton {
+        background-color: rgb(255, 255, 255);
+    }
+    QPushButton:hover {
+        background-color: lightblue;
+    }
+    QPushButton:pressed {
+        background-color: lightskyblue;
+    }</string>
+         </property>
+         <property name="text">
+          <string>Order Details</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../../../XPS9530/Downloads/projectRoboTraiCay (3)/projectRoboTraiCay (3)/Manager/growth rate.jpg</normaloff>../../../XPS9530/Downloads/projectRoboTraiCay (3)/projectRoboTraiCay (3)/Manager/growth rate.jpg</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>40</width>
+           <height>40</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QPushButton" name="pushButtonEmployees">
+         <property name="styleSheet">
+          <string notr="true">
+    QPushButton {
+        background-color: rgb(255, 255, 255);
+    }
+    QPushButton:hover {
+        background-color: lightblue;
+    }
+    QPushButton:pressed {
+        background-color: lightskyblue;
+    }</string>
+         </property>
+         <property name="text">
+          <string>Employees</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../../../XPS9530/Downloads/projectRoboTraiCay (3)/projectRoboTraiCay (3)/Manager/re_product_cate.jpg</normaloff>../../../XPS9530/Downloads/projectRoboTraiCay (3)/projectRoboTraiCay (3)/Manager/re_product_cate.jpg</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>40</width>
+           <height>40</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QPushButton" name="pushButtonProducts">
+         <property name="styleSheet">
+          <string notr="true">
+    QPushButton {
+        background-color: rgb(255, 255, 255);
+    }
+    QPushButton:hover {
+        background-color: lightblue;
+    }
+    QPushButton:pressed {
+        background-color: lightskyblue;
+    }</string>
+         </property>
+         <property name="text">
+          <string>Products</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../../../XPS9530/Downloads/projectRoboTraiCay (3)/projectRoboTraiCay (3)/Manager/growth rate.jpg</normaloff>../../../XPS9530/Downloads/projectRoboTraiCay (3)/projectRoboTraiCay (3)/Manager/growth rate.jpg</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>40</width>
+           <height>40</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QPushButton" name="pushButtonRecipes">
+         <property name="styleSheet">
+          <string notr="true">
+    QPushButton {
+        background-color: rgb(255, 255, 255);
+    }
+    QPushButton:hover {
+        background-color: lightblue;
+    }
+    QPushButton:pressed {
+        background-color: lightskyblue;
+    }</string>
+         </property>
+         <property name="text">
+          <string>Recipes</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../../../XPS9530/Downloads/projectRoboTraiCay (3)/projectRoboTraiCay (3)/Manager/growth rate.jpg</normaloff>../../../XPS9530/Downloads/projectRoboTraiCay (3)/projectRoboTraiCay (3)/Manager/growth rate.jpg</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>40</width>
+           <height>40</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QPushButton" name="pushButtonIngredients">
+         <property name="styleSheet">
+          <string notr="true">
+    QPushButton {
+        background-color: rgb(255, 255, 255);
+    }
+    QPushButton:hover {
+        background-color: lightblue;
+    }
+    QPushButton:pressed {
+        background-color: lightskyblue;
+    }</string>
+         </property>
+         <property name="text">
+          <string>Ingredients</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../../../XPS9530/Downloads/projectRoboTraiCay (3)/projectRoboTraiCay (3)/Manager/re_product.jpg</normaloff>../../../XPS9530/Downloads/projectRoboTraiCay (3)/projectRoboTraiCay (3)/Manager/re_product.jpg</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>40</width>
+           <height>40</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QPushButton" name="pushButtonEmployeeAccs">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>170</y>
+        <width>152</width>
+        <height>49</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+    QPushButton {
+        background-color: rgb(255, 255, 255);
+    }
+    QPushButton:hover {
+        background-color: lightblue;
+    }
+    QPushButton:pressed {
+        background-color: lightskyblue;
+    }</string>
+      </property>
+      <property name="text">
+       <string>Employees Accounts</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../../../XPS9530/Downloads/projectRoboTraiCay (3)/projectRoboTraiCay (3)/Manager/re_product_cate.jpg</normaloff>../../../XPS9530/Downloads/projectRoboTraiCay (3)/projectRoboTraiCay (3)/Manager/re_product_cate.jpg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>40</width>
+        <height>40</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButtonProductCategories">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>230</y>
+        <width>151</width>
+        <height>49</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+    QPushButton {
+        background-color: rgb(255, 255, 255);
+    }
+    QPushButton:hover {
+        background-color: lightblue;
+    }
+    QPushButton:pressed {
+        background-color: lightskyblue;
+    }</string>
+      </property>
+      <property name="text">
+       <string>Product Categories</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../../../XPS9530/Downloads/projectRoboTraiCay (3)/projectRoboTraiCay (3)/Manager/growth rate.jpg</normaloff>../../../XPS9530/Downloads/projectRoboTraiCay (3)/projectRoboTraiCay (3)/Manager/growth rate.jpg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>40</width>
+        <height>40</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButtonIngredientCategories">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>290</y>
+        <width>151</width>
+        <height>49</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+    QPushButton {
+        background-color: rgb(255, 255, 255);
+    }
+    QPushButton:hover {
+        background-color: lightblue;
+    }
+    QPushButton:pressed {
+        background-color: lightskyblue;
+    }</string>
+      </property>
+      <property name="text">
+       <string>Ingredient Categories</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../../../XPS9530/Downloads/projectRoboTraiCay (3)/projectRoboTraiCay (3)/Manager/growth rate.jpg</normaloff>../../../XPS9530/Downloads/projectRoboTraiCay (3)/projectRoboTraiCay (3)/Manager/growth rate.jpg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>40</width>
+        <height>40</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButtonOrderMasters">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>350</y>
+        <width>151</width>
+        <height>49</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+    QPushButton {
+        background-color: rgb(255, 255, 255);
+    }
+    QPushButton:hover {
+        background-color: lightblue;
+    }
+    QPushButton:pressed {
+        background-color: lightskyblue;
+    }</string>
+      </property>
+      <property name="text">
+       <string>Order Masters</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../../../XPS9530/Downloads/projectRoboTraiCay (3)/projectRoboTraiCay (3)/Manager/growth rate.jpg</normaloff>../../../XPS9530/Downloads/projectRoboTraiCay (3)/projectRoboTraiCay (3)/Manager/growth rate.jpg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>40</width>
+        <height>40</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButtonCustomerAccs">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>410</y>
+        <width>151</width>
+        <height>49</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+    QPushButton {
+        background-color: rgb(255, 255, 255);
+    }
+    QPushButton:hover {
+        background-color: lightblue;
+    }
+    QPushButton:pressed {
+        background-color: lightskyblue;
+    }</string>
+      </property>
+      <property name="text">
+       <string>Customer Accounts</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../../../XPS9530/Downloads/projectRoboTraiCay (3)/projectRoboTraiCay (3)/Manager/product..jpg</normaloff>../../../XPS9530/Downloads/projectRoboTraiCay (3)/projectRoboTraiCay (3)/Manager/product..jpg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>40</width>
+        <height>40</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>480</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Filter Information</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEditSearchDatabase">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>540</y>
+        <width>291</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <zorder>widget</zorder>
+     <zorder>tableWidgetDatabase</zorder>
+     <zorder>pushButtonSearch</zorder>
+     <zorder>pushButtonSaveDatabase</zorder>
+     <zorder>verticalLayoutWidget_3</zorder>
+     <zorder>pushButtonEmployeeAccs</zorder>
+     <zorder>pushButtonProductCategories</zorder>
+     <zorder>pushButtonIngredientCategories</zorder>
+     <zorder>pushButtonOrderMasters</zorder>
+     <zorder>pushButtonCustomerAccs</zorder>
+     <zorder>label_5</zorder>
+     <zorder>lineEditSearchDatabase</zorder>
+    </widget>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Data Visualization</string>
+     </attribute>
+     <widget class="QWidget" name="gridLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>1461</width>
+        <height>761</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="1" column="1">
+        <widget class="QGroupBox" name="groupBox_3">
+         <property name="font">
+          <font>
+           <family>Bahnschrift</family>
+           <pointsize>8</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color:rgb(59, 140, 136)</string>
+         </property>
+         <property name="title">
+          <string>Chart Visualization:</string>
+         </property>
+         <widget class="QWidget" name="verticalLayoutWidget">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>20</y>
+            <width>901</width>
+            <height>481</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayoutPlot"/>
+         </widget>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QGroupBox" name="groupBox_2">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>200</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Bahnschrift</family>
+           <pointsize>8</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color:rgb(147, 195, 194)</string>
+         </property>
+         <property name="title">
+          <string>List Data:</string>
+         </property>
+         <widget class="QTableWidget" name="tableWidgetStatistic">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>20</y>
+            <width>911</width>
+            <height>161</height>
+           </rect>
+          </property>
+         </widget>
+        </widget>
+       </item>
+       <item row="0" column="0" rowspan="2">
+        <widget class="QGroupBox" name="groupBox">
+         <property name="maximumSize">
+          <size>
+           <width>500</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Bahnschrift</family>
+           <pointsize>8</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="title">
+          <string>Functions:</string>
+         </property>
+         <widget class="QWidget" name="verticalLayoutWidget_2">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>309</y>
+            <width>461</width>
+            <height>411</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayoutFunction">
+           <item>
+            <widget class="QPushButton" name="pushButtonChartProductPurchasedCount">
+             <property name="text">
+              <string>Number of each Product count</string>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>../../../XPS9530/Downloads/projectRoboTraiCay (3)/projectRoboTraiCay (3)/Manager/product_cate.jpg</normaloff>../../../XPS9530/Downloads/projectRoboTraiCay (3)/projectRoboTraiCay (3)/Manager/product_cate.jpg</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>40</width>
+               <height>40</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButtonChartCustomerPurchasedCount">
+             <property name="text">
+              <string>Customer purchased counting by Product</string>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>../../../XPS9530/Downloads/projectRoboTraiCay (3)/projectRoboTraiCay (3)/Manager/product..jpg</normaloff>../../../XPS9530/Downloads/projectRoboTraiCay (3)/projectRoboTraiCay (3)/Manager/product..jpg</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>40</width>
+               <height>40</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButtonChartCustomerCategoryPurchasedCount">
+             <property name="text">
+              <string>Customer purchased counting by Product Category</string>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>../../../XPS9530/Downloads/projectRoboTraiCay (3)/projectRoboTraiCay (3)/Manager/product..jpg</normaloff>../../../XPS9530/Downloads/projectRoboTraiCay (3)/projectRoboTraiCay (3)/Manager/product..jpg</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>40</width>
+               <height>40</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButtonChartTotalRevenue">
+             <property name="text">
+              <string>Total revenue of each Product</string>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>../../../XPS9530/Downloads/projectRoboTraiCay (3)/projectRoboTraiCay (3)/Manager/re_product.jpg</normaloff>../../../XPS9530/Downloads/projectRoboTraiCay (3)/projectRoboTraiCay (3)/Manager/re_product.jpg</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>40</width>
+               <height>40</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButtonChartGrowthRate">
+             <property name="text">
+              <string>Rate of total revenue growth of each Product</string>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>../../../XPS9530/Downloads/projectRoboTraiCay (3)/projectRoboTraiCay (3)/Manager/growth rate.jpg</normaloff>../../../XPS9530/Downloads/projectRoboTraiCay (3)/projectRoboTraiCay (3)/Manager/growth rate.jpg</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>40</width>
+               <height>40</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="gridLayoutWidget_3">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>100</y>
+            <width>461</width>
+            <height>201</height>
+           </rect>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_3">
+           <item row="0" column="0">
+            <widget class="QLabel" name="label">
+             <property name="font">
+              <font>
+               <family>Bahnschrift</family>
+               <pointsize>8</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>Products:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_3">
+             <property name="font">
+              <font>
+               <family>Bahnschrift</family>
+               <pointsize>8</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>From:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QListWidget" name="listWidgetProductIDs"/>
+           </item>
+           <item row="1" column="1">
+            <widget class="QDateEdit" name="dateEditFrom_Chart">
+             <property name="dateTime">
+              <datetime>
+               <hour>0</hour>
+               <minute>0</minute>
+               <second>0</second>
+               <year>2022</year>
+               <month>6</month>
+               <day>1</day>
+              </datetime>
+             </property>
+             <property name="minimumTime">
+              <time>
+               <hour>0</hour>
+               <minute>0</minute>
+               <second>0</second>
+              </time>
+             </property>
+             <property name="displayFormat">
+              <string>MM/yyyy</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QDateEdit" name="dateEditTo_Chart">
+             <property name="dateTime">
+              <datetime>
+               <hour>0</hour>
+               <minute>0</minute>
+               <second>0</second>
+               <year>2023</year>
+               <month>7</month>
+               <day>1</day>
+              </datetime>
+             </property>
+             <property name="displayFormat">
+              <string>MM/yyyy</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="label_4">
+             <property name="font">
+              <font>
+               <family>Bahnschrift</family>
+               <pointsize>8</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>To:</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QLabel" name="label_20">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>40</y>
+            <width>291</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">COLOR:rgb(59, 140, 136);
+font: 63 18pt &quot;Bahnschrift SemiBold&quot;;</string>
+          </property>
+          <property name="text">
+           <string>DATA VISUALIZATION</string>
+          </property>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>Revenue Forecasting</string>
+     </attribute>
+     <widget class="QWidget" name="widget_2" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1221</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <widget class="QLabel" name="label_21">
+       <property name="geometry">
+        <rect>
+         <x>390</x>
+         <y>0</y>
+         <width>811</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">COLOR:rgb(59, 140, 136);
+font: 63 28pt &quot;Bahnschrift SemiBold&quot;;</string>
+       </property>
+       <property name="text">
+        <string>FORECAST WITH MACHINE LEARNING</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="label_22">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>50</y>
+        <width>101</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 63 10pt &quot;Bahnschrift SemiBold&quot;;
+color:rgb(59, 140, 136)</string>
+      </property>
+      <property name="text">
+       <string>Product List</string>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="listWidgetProducts_ML">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>70</y>
+        <width>101</width>
+        <height>221</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_12">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>60</y>
+        <width>961</width>
+        <height>701</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift</family>
+        <pointsize>8</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255)</string>
+      </property>
+      <property name="title">
+       <string>Chart Visualization:</string>
+      </property>
+      <widget class="QWidget" name="verticalLayoutWidget_12">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>941</width>
+         <height>671</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayoutPlot_ML"/>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="label_29">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>60</y>
+        <width>351</width>
+        <height>231</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid rgb(59, 140, 136);
+border-Radius: 20%</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QWidget" name="gridLayoutWidget_5">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>575</y>
+        <width>451</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_5">
+       <item row="0" column="0" colspan="2">
+        <widget class="QPushButton" name="pushButtonLoadModel">
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(11, 131,120, 219), stop:1 rgba(85,98,112,226));
+	color:rgba(255,255,255,210);
+	border-radius: 5px;
+}
+QPushButton:hover{
+background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(150, 123,111, 219), stop:1 rgba(85,81,84,226));
+}
+QPushButton:press{
+	padding-left:5px;
+	padding-top: 5px;
+	background-color: rgba(150,123,111,255);
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Load Model</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="3">
+        <widget class="QLineEdit" name="lineEditTotalTo_ML"/>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="lineEditTotalFrom_ML"/>
+       </item>
+       <item row="0" column="3">
+        <widget class="QLineEdit" name="lineEditLoadModel"/>
+       </item>
+       <item row="2" column="2">
+        <widget class="QLabel" name="label_32">
+         <property name="text">
+          <string>To:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_31">
+         <property name="text">
+          <string>From:</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_11">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>300</y>
+        <width>471</width>
+        <height>251</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift</family>
+        <pointsize>8</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(255, 255, 255)</string>
+      </property>
+      <property name="title">
+       <string>List Data:</string>
+      </property>
+      <widget class="QTableWidget" name="tableWidget_ML">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>451</width>
+         <height>221</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="gridLayoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>690</y>
+        <width>451</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_30">
+         <property name="text">
+          <string>Total sales:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="lineEditTotal_ML"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="label_33">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>560</y>
+        <width>471</width>
+        <height>201</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid rgb(59, 140, 136);
+background-color: rgb(255, 255, 255);
+border-Radius: 20%</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QWidget" name="gridLayoutWidget_6">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>204</y>
+        <width>331</width>
+        <height>76</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_7">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_26">
+         <property name="text">
+          <string>RMSE </string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLabel" name="label_27">
+         <property name="text">
+          <string>MAE </string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLineEdit" name="lineEditRMSE"/>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="lineEditMAE"/>
+       </item>
+       <item row="1" column="2">
+        <widget class="QLineEdit" name="lineEditMAPE"/>
+       </item>
+       <item row="0" column="2">
+        <widget class="QLabel" name="label_28">
+         <property name="text">
+          <string>MAPE </string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2">
+        <widget class="QPushButton" name="pushButtonSaveModel">
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(11, 131,120, 219), stop:1 rgba(85,98,112,226));
+	color:rgba(255,255,255,210);
+	border-radius: 5px;
+}
+QPushButton:hover{
+background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(150, 123,111, 219), stop:1 rgba(85,81,84,226));
+}
+QPushButton:press{
+	padding-left:5px;
+	padding-top: 5px;
+	background-color: rgba(150,123,111,255);
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Save Model</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="lineEditSaveModel"/>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_35">
+         <property name="text">
+          <string>Name the Model to save:</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="gridLayoutWidget_4">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>110</y>
+        <width>331</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_4">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_24">
+         <property name="text">
+          <string>Train size:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="lineEditSize"/>
+       </item>
+       <item row="0" column="2">
+        <widget class="QLabel" name="label_25">
+         <property name="text">
+          <string>%</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QPushButton" name="pushButtonTrainModel">
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(11, 131,120, 219), stop:1 rgba(85,98,112,226));
+	color:rgba(255,255,255,210);
+	border-radius: 5px;
+}
+QPushButton:hover{
+background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(150, 123,111, 219), stop:1 rgba(85,81,84,226));
+}
+QPushButton:press{
+	padding-left:5px;
+	padding-top: 5px;
+	background-color: rgba(150,123,111,255);
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Train Model</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="lineEditLoop"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_34">
+         <property name="text">
+          <string>Iterate:</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>180</y>
+        <width>171</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">COLOR:rgb(59, 140, 136);
+font: 75 15pt &quot;Bahnschrift&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Model Evaluation</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="gridLayoutWidget_8">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>70</y>
+        <width>331</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_9">
+       <item row="0" column="3">
+        <widget class="QLineEdit" name="lineEditTo_ML"/>
+       </item>
+       <item row="0" column="4">
+        <widget class="QPushButton" name="pushButtonLoadData">
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(11, 131,120, 219), stop:1 rgba(85,98,112,226));
+	color:rgba(255,255,255,210);
+	border-radius: 5px;
+}
+QPushButton:hover{
+background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(150, 123,111, 219), stop:1 rgba(85,81,84,226));
+}
+QPushButton:press{
+	padding-left:5px;
+	padding-top: 5px;
+	background-color: rgba(150,123,111,255);
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Load Dataset</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_6">
+         <property name="text">
+          <string>From</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="lineEditFrom_ML">
+         <property name="font">
+          <font>
+           <family>Bahnschrift</family>
+           <pointsize>8</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 8pt &quot;Bahnschrift&quot;;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QLabel" name="label_7">
+         <property name="text">
+          <string>To</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QPushButton" name="pushButtonForecast">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>650</y>
+        <width>451</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(11, 131,120, 219), stop:1 rgba(85,98,112,226));
+	color:rgba(255,255,255,210);
+	border-radius: 5px;
+}
+QPushButton:hover{
+background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(150, 123,111, 219), stop:1 rgba(85,81,84,226));
+}
+QPushButton:press{
+	padding-left:5px;
+	padding-top: 5px;
+	background-color: rgba(150,123,111,255);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Forecast</string>
+      </property>
+     </widget>
+     <zorder>label_33</zorder>
+     <zorder>label_29</zorder>
+     <zorder>widget_2</zorder>
+     <zorder>label_22</zorder>
+     <zorder>listWidgetProducts_ML</zorder>
+     <zorder>groupBox_12</zorder>
+     <zorder>gridLayoutWidget_5</zorder>
+     <zorder>groupBox_11</zorder>
+     <zorder>gridLayoutWidget_2</zorder>
+     <zorder>gridLayoutWidget_6</zorder>
+     <zorder>gridLayoutWidget_4</zorder>
+     <zorder>label_2</zorder>
+     <zorder>gridLayoutWidget_8</zorder>
+     <zorder>pushButtonForecast</zorder>
+    </widget>
+    <widget class="QWidget" name="tab_4">
+     <attribute name="title">
+      <string>Forecasting Instruction</string>
+     </attribute>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>10</y>
+        <width>1361</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift SemiBold</family>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(57, 139, 134)</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:28pt; font-weight:600; color:#ffffff;&quot;&gt;FORECASTING INSTRUCTION&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QTextBrowser" name="textBrowser">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>100</y>
+        <width>1361</width>
+        <height>651</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift SemiCondensed</family>
+       </font>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Bahnschrift SemiCondensed'; font-size:7.8pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:12pt; font-weight:600;&quot;&gt;Train and Save Model&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-size:12pt; font-weight:600;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:12pt; font-weight:600;&quot;&gt;Step 1&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:12pt;&quot;&gt;Enter a time range in the 'From' and 'To' fields to specify the period for data retrieval from the database. Additionally, you can select specific products from the Product List into train the model specifically for forecasting the revenue of those products. (If the number of rows selected (shown in the table) is under 100, the model will likely underperform).&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:12pt; font-weight:600;&quot;&gt;Step 2&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:12pt;&quot;&gt;Input the percentage of data to be used for training the model in the 'Train size' field and specify the number of iterations in the 'Iterate' field (recommended: 10 to 20 times) to achieve the best model performance.&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:12pt; font-weight:600;&quot;&gt;Step 3&lt;/span&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:12pt;&quot;&gt;  &lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:12pt;&quot;&gt;After training the model, evaluation metrics such as RMSE, MAE, and MAPE will be displayed. If you want to save the model, name it and save it to your desired directory.&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-size:12pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:12pt; font-weight:600;&quot;&gt;Load and Use Model&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-size:12pt; font-weight:600;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:12pt; font-weight:600;&quot;&gt;Step 1 &lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:12pt;&quot;&gt;Load your saved model by clicking the 'Load Model' button and navigating to the directory where the model is saved.&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:12pt; font-weight:600;&quot;&gt;Step 2&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:12pt;&quot;&gt;Enter your desired time range in the 'From' and 'To' fields to specify the period for which you want to make predictions.&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:12pt; font-weight:600;&quot;&gt;Step 3&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:12pt;&quot;&gt;Click the 'Forecast' button. The total revenue for the specified time range will be displayed, along with a chart showing the revenue trend over that period.&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-size:12pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:12pt;&quot;&gt;Notice: The date format must be: 'm/d/Y'. For example, 6/9/2022.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1532</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
