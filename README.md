@@ -93,3 +93,36 @@ The project uses a simulated retail database designed for end-to-end ML workflow
 ---
 
 ## 8. Repository Structure
+```
+|   LICENSE
+|   README.md
+|
++---app
+|   |   App.py
+|   |
+|   +---PickledModels
+|   |
+|   \---Utils
+|
++---data
+|   \---Raw data
+|           customers.csv
+|           employees.csv
+|           ingredientCategories.csv
+|           ingredients.csv
+|           orderDetails.csv
+|           orderMasters.csv
+|           productCategories.csv
+|           products.csv
+|           recipes.csv
+|
++---docs
+|   |   Developing a Multidimensional Machine Learning Integrated Application for Small Businesses.pdf
+|   |
+|   \---images
+|           ERD.png
+|
+\---notebooks
+        Forecast.ipynb
+        Recommender_Final.ipynb
+```
